@@ -15,7 +15,7 @@
 }
 .portfolioBox{
     height: 290px;
-    width: 420px;
+    width: 380px;
     position: relative;
     border-radius: 1rem;
     cursor: pointer;
@@ -127,34 +127,39 @@
     text-transform: uppercase;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 900 !important;
-    letter-spacing: 1.5px;
-    font-size: 1rem;
+    /* letter-spacing: 1.5px; */
     color: var(--primary-color);
     top: 5%;
+}
+.PortHead h1{
+    font-size: 1.4rem;
 }
 .portDetails{
     margin-top: 1.2rem;
     display: flex;
     width: 100%;
     height: fit-content;
-    align-items: center;
+    align-items: left;
     justify-content: center;
     flex-wrap: wrap;
     font-family: poppins;
     color: var(--primary-text-color);
+    row-gap: 6px;
+    padding-left:3rem;
 }
 .portDetails .portDetail {
     list-style-type: none;
     display: flex;
     align-items: center;
     text-align: left;
-    justify-content: center;
+    justify-content: start;
     gap: 10px;
-    text-wrap: wrap;
+    text-wrap: nowrap;
     width: 49%;
 
 }
 .portDetails .portDetail h2{
+    text-wrap: wrap;
     font-weight: 600;
     font-size: 0.9em;
 

@@ -1,29 +1,34 @@
 import './index.css'
-import habsImg from '../../assets/images/habs.png'
+import habsImg from '../../assets/images/habs.jpg'
+import swiperImg from '../../assets/images/swiper.png'
+import personalport1 from '../../assets/images/personalport1.png'
+import personalport2 from '../../assets/images/personalport2.png'
+import todoImg from '../../assets/images/todo.png'
 import Headings from '../../components/Headings'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFile, faUser } from '@fortawesome/free-regular-svg-icons'
 import { faCode, faShare, faXmark } from '@fortawesome/free-solid-svg-icons'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
+import ConfirmBox from '../../components/ConfirmBox'
 
 const PortfolioData = [
     {
         portNo:1,
         portName:'Organizational Website',
-        portLink:'https://www.hamroawaj.org.np/',
+        portLink:'https://habs-final.vercel.app/',
         portLanguage:'React, Css3 ',
         portClientName:'Hamro Awaj Baal Sanjal',
-        portLinkName:'hamroawaj.org.np',
+        portLinkName:'hamroawaj.view',
         portImg:habsImg,
     },
     {
         portNo:2,
-        portName:'My websire',
-        portLink:'https://www.hamroawaj.org.np/',
-        portLanguage:'React, Css3 ',
-        portClientName:'Saksham Khatiwada',
-        portImg:habsImg,
-        portLinkName:'hamroawaj.org.np',
+        portName:'Swiper Portfolio',
+        portLink:'https://swiper-portflio.vercel.app/',
+        portLanguage:'React, Nextjs, SwiperJs',
+        portClientName:'Manoj Gautam',
+        portImg:swiperImg,
+        portLinkName:'Swiper-Portfolio.view',
     },
     {
         portNo:3,
@@ -36,30 +41,30 @@ const PortfolioData = [
     },
     {
         portNo:4,
-        portName:'Organizational Website',
-        portLink:'https://www.hamroawaj.org.np/',
-        portLanguage:'React, Css3 ',
-        portClientName:'Hamro Awaj Baal Sanjal',
-        portLinkName:'hamroawaj.org.np',
-        portImg:habsImg,
+        portName:'Responsive Personal Website',
+        portLink:'https://personalportfolio1.vercel.app/',
+        portLanguage:'HTML, Css3, Js ',
+        portClientName:'Aadit Poudel',
+        portLinkName:'personalportfolio.view',
+        portImg:personalport1,
     },
     {
         portNo:5,
-        portName:'Organizational Website',
-        portLink:'https://www.hamroawaj.org.np/',
-        portLanguage:'React, Css3 ',
-        portClientName:'Hamro Awaj Baal Sanjal',
-        portLinkName:'hamroawaj.org.np',
-        portImg:habsImg,
+        portName:'Responsive Personal Website',
+        portLink:'https://personal-portfolio2-saksham.vercel.app/',
+        portLanguage:'HTML, Css3, Js ',
+        portClientName:'Amrit Rijal',
+        portLinkName:'personalportfolio.view',
+        portImg:personalport2,
     },
     {
         portNo:6,
-        portName:'Organizational Website',
-        portLink:'https://www.hamroawaj.org.np/',
-        portLanguage:'React, Css3 ',
-        portClientName:'Hamro Awaj Baal Sanjal',
-        portLinkName:'hamroawaj.org.np',
-        portImg:habsImg,
+        portName:'Goal Tracker / Todo',
+        portLink:'https://goal-tracker-bysaksham.vercel.app/',
+        portLanguage:'React ',
+        portClientName:'Self Local Project',
+        portLinkName:'goaltracker.view',
+        portImg:todoImg,
     },
 ]
 
@@ -77,6 +82,7 @@ const Portfolio = () => {
         setportBoxOpen(!portBoxOpen)
 
     }
+
     return(
         <>
 
@@ -108,7 +114,7 @@ const Portfolio = () => {
                             return(
                                 <div key={e.portID} className="PortMoreBox">
                     <div className="PortHead">
-                        <h1>Habs website</h1>
+                        <h1>{e.portName}</h1>
                     </div>
                     <div className="portDetails">
                         <div className="portDetail">
@@ -142,7 +148,7 @@ const Portfolio = () => {
             </div>
     )
 }
-            
+            <ConfirmBox />
         </>
     );
 }

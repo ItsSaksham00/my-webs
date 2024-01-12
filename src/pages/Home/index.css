@@ -83,9 +83,9 @@
 }
 .InfoDetailBox{
     /* background-color: red; */
-    width: 60%;
+    width: 65%;
     margin: 14px 0 28px;
-    text-align: left;
+    text-align: center;
 }
 .InfoDetailBox p{
     color: var(--primary-text-color);
@@ -233,6 +233,7 @@
 .aboutBoxDisplay{
     width: 94%;    
     height: 660px;
+
 
 }
 }
