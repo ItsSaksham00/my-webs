@@ -86,22 +86,22 @@ const handleSubmit = async (e) => {
                     </div>  
                     <div className="contSocialLinks">
                             <div className='linksContainer'>
-                                <a href='https://www.facebook.com/skxm0/'>
+                                <a target='_blank' href='https://www.facebook.com/skxm0/'>
                                     <FontAwesomeIcon icon={faFacebookF} />
                                 </a>
                             </div>
                             <div className='linksContainer'>
-                                <a href='https://www.instagram.com/notsaks_00/'>
+                                <a target='_blank' href='https://www.instagram.com/notsaks_00/'>
                                     <FontAwesomeIcon icon={faInstagram} />
                                 </a>
                             </div>
                             <div className='linksContainer'>
-                                <a href='https://www.linkedin.com/in/saksham-khatiwada-509468297?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'>
+                                <a target='_blank' href='https://www.linkedin.com/in/saksham-khatiwada-509468297?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'>
                                     <FontAwesomeIcon icon={faLinkedin} />
                                 </a>
                             </div>
                             <div className='linksContainer'>
-                                <a href='https://github.com/ItsSaksham00'>
+                                <a target='_blank' href='https://github.com/ItsSaksham00'>
                                     <FontAwesomeIcon icon={faGithub} />
                                 </a>
                             </div>
