@@ -1,8 +1,8 @@
 import './index.css'
-import habsImg from '../../assets/images/habs.jpg'
+import habsImg from '../../assets/images/habs.png'
 import swiperImg from '../../assets/images/swiper.png'
-import personalport1 from '../../assets/images/personalport1.png'
-import personalport2 from '../../assets/images/personalport2.png'
+import personalport2 from '../../assets/images/personal1.png'
+import personalport1 from '../../assets/images/personal2.png'
 import todoImg from '../../assets/images/todo.png'
 import Headings from '../../components/Headings'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -20,6 +20,7 @@ const PortfolioData = [
         portClientName:'Hamro Awaj Baal Sanjal',
         portLinkName:'hamroawaj.view',
         portImg:habsImg,
+        portFit:'contain',
     },
     {
         portNo:2,
@@ -28,6 +29,7 @@ const PortfolioData = [
         portLanguage:'React, Nextjs, SwiperJs',
         portClientName:'Manoj Gautam',
         portImg:swiperImg,
+        portFit:'cover',
         portLinkName:'Swiper-Portfolio.view',
     },
     {
@@ -37,6 +39,7 @@ const PortfolioData = [
         portLanguage:'React, Css3 ',
         portClientName:'Hamro Awaj Baal Sanjal',
         portLinkName:'hamroawaj.org.np',
+        portFit:'cover',
         portImg:habsImg,
     },
     {
@@ -46,6 +49,7 @@ const PortfolioData = [
         portLanguage:'HTML, Css3, Js ',
         portClientName:'Aadit Poudel',
         portLinkName:'personalportfolio.view',
+        portFit:'contain',
         portImg:personalport1,
     },
     {
@@ -55,6 +59,7 @@ const PortfolioData = [
         portLanguage:'HTML, Css3, Js ',
         portClientName:'Amrit Rijal',
         portLinkName:'personalportfolio.view',
+        portFit:'contain',
         portImg:personalport2,
     },
     {
@@ -64,6 +69,7 @@ const PortfolioData = [
         portLanguage:'React ',
         portClientName:'Self Local Project',
         portLinkName:'goaltracker.view',
+        portFit:'cover',
         portImg:todoImg,
     },
 ]
@@ -93,6 +99,7 @@ const Portfolio = () => {
                     return(
                         <div key={e.portNo} className="portfolioBox" onClick={() => OpenPortBox(e.portNo)}>
                             <img 
+                                 style={{objectFit:`${e.portFit}`}}
                                 src={e.portImg}
                                 alt={e.portClientName}
                             />
