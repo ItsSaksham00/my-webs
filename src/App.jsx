@@ -7,6 +7,7 @@ import Portfolio from './pages/Portfolio'
 import Contact from './pages/Contact'
 import Home from './pages/Home'
 
+
 function App() {
 
   return (
@@ -17,8 +18,7 @@ function App() {
               <Route index  element={<Home />} />
               <Route path='AboutMe' element={<About />} />
               <Route path='Portfolio' element={<Portfolio />} />
-              <Route path='ContactMe' element={<Contact />} />
-    
+              <Route path='ContactMe' element={<Contact />} />    
           
           </Route>
       </Routes>
