@@ -96,7 +96,7 @@ const handleSubmit = async (e) => {
                                 </a>
                             </div>
                             <div className='linksContainer'>
-                                <a target='_blank' href='https://www.linkedin.com/in/saksham-khatiwada-509468297?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'>
+                                <a target='_blank' href='https://www.linkedin.com/in/sakshamkth'>
                                     <FontAwesomeIcon icon={faLinkedin} />
                                 </a>
                             </div>
