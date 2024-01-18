@@ -39,7 +39,7 @@ const PortfolioData = [
         portLanguage:'React, Css3 ',
         portClientName:'Hamro Awaj Baal Sanjal',
         portLinkName:'hamroawaj.org.np',
-        portFit:'cover',
+        portFit:'contain',
         portImg:habsImg,
     },
     {
@@ -143,6 +143,7 @@ const Portfolio = () => {
                     </div>
                     <div className="portImage">
                             <img
+                            style={{objectFit:`${e.portFit}`}}
                                 src={e.portImg}
                             />
                     </div>
