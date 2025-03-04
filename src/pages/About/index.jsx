@@ -30,7 +30,7 @@ const About = () => {
                                 </li>
                                 <li>
                                     <h2 className="infoPoint">Age: </h2>
-                                    <h2 className="detailPoint"> 19 Years</h2>
+                                    <h2 className="detailPoint"> 91 Years</h2>
                                 </li>
                                 <li>
                                     <h2 className="infoPoint">Nationality: </h2>
